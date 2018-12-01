@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>VCC2018_page</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Our Submission to the Voice Conversion Challenge 2018</a></h1>
+               
+
+        <p>This is a demo page for our (Team AST) submission to the Voice Conversion Challenge 2018.</p>
+      </header>
+      <section>
+<hr>
+<b><font size="5"><font color="#A31F34">Dataset Used</font></font></>
+
+<p>We evaluated our proposed framework on the <strong>Voice Conversion Challenge 2018 (VCC 2018) dataset</strong>. <a href="https://arxiv.org/abs/1804.04262">[Paper]</a><a href="https://datashare.is.ed.ac.uk/handle/10283/3061">[Dataset]</a></p>
+  <li><b>Hub task : parallel training</b>
+    <ul>
+      <li>Dataset consists of 4 source and 4 target speakers (consisting of both female and male speakers) from fixed corpora as training data. Each speaker utters the same sentences set consisting of around 80 sentences.
+    </ul>
+  <li><b>Spoke task : nonparallel training</b>
+    <ul>
+      <li>Dataset consists of voices of other 4 source speakers (consisting of both female and male speakers) from fixed corpora as training data. Each speaker utters another sentences set consisting of around 80 sentences. The target speakers are the same as in the hub task. Therefore, the sentence set of the source speakers is different from that of the target speakers.
+    </ul>
+<hr>
+
+<font size="5"><font color="#A31F34">Method (Hub Task)</font></font>
+
+<p>We proposed a Vocoder-Free Voice Conversion framework. Specifically, we perform conversion on mel cepstrum coefficients derived from STRAIGHT-vocoded spectrum and synthesizes waveform by directed waveform modification.</p>
+<p>A flowchart is provided below.</p>
+<p><img src="./image/DIFF_graph.PNG" alt="Naturalness"></p>
+<p>To be more specific, this is how we estimate the spectral difference. </p>
+<p>We use Locally Linear Embedding as the key method to  perform conversion.</p>
+<p><img src="./image/vcc2018_par.PNG" alt="Naturalness"></p>
+<h2 id="speech-samples"><font color="#A31F34">Speech Samples</font></h2>
+<p>Here are some speech samples.</p>
+<p>F stands for female speakers, M stands for male speakers.</p>
+<h3 id="sf1-tf1">SF1-TF1</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Type</th>
+      <th style="text-align: left">Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Source (VCC2SF1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/natural/SF1-30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Target (VCC2TF1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/natural/TF1-30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Converted Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/vae-sp2sp/SF1-TF1-30001-gau-GV.wav">&lt;/source&gt;</audio></td>
+    </tr>
+</tbody>
+</table>
+
+<h3 id="sf1-tm1">SF1-TM1</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Type</th>
+      <th style="text-align: left">Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Source (VCC2SF1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/natural/SF1-30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Target (VCC2TM1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/natural/TM1-30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Converted Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/vae-sp2sp/SF1-TM1-30001-gau-GV.wav">&lt;/source&gt;</audio></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="sm1-tf1">SM1-TF1</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Type</th>
+      <th style="text-align: left">Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Source (VCC2SM1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/natural/SM1-30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Target (VCC2TF1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/natural/TF1-30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Converted Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/vae-sp2sp/SM1-TF1-30001-gau-GV.wav">&lt;/source&gt;</audio></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="sm1-tm1">SM1-TM1</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Type</th>
+      <th style="text-align: left">Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Source (VCC2SM1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/natural/SM1-30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Target (VCC2TM1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/natural/TM1-30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Converted Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/vae-sp2sp/SM1-TM1-30001-gau-GV.wav">&lt;/source&gt;</audio></td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<font size="5"><font color="#A31F34">Method (SPOKE Task)</font></font>
+
+<p>On the SPOKE task, we perform conversion on mel cepstrum coefficients derived from STRAIGHT-vocoded spectrum and synthesizes waveform using the STRAIGHT Vocoder.</p>
+<p>This is a flowchart of a our VC system for non-parallel corpora.</p>
+<p><img src="./image/vocoder_graph.PNG" alt="Naturalness"></p>
+
+<p>Worth of mentioning, no DTW alignment is needed on the offline stage (Since there is no parallel data provided in this case).</p>
+<p>We Find K nearest neighbors from both <font color="#A31F34">source</font> and <font color="#A31F34">target</font> dictionary by sorting the difference according to the difference to the input MCEP frame.</p>
+
+<p>Then apply the reconstruction weight, which minimizes the reconstruction error of the source speech, to the Nearest Neighbors obtained from the target dictionary.</p>
+
+<p><img src="./image/non_parallel_graph.PNG" alt="Naturalness"></p>
+<h2 id="speech-samples"><font color="#A31F34">Speech Samples</font></h2>
+<p>Here are some speech samples.</p>
+<h3 id="sf1-tf1">SF3-TF1</h3>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Type</th>
+      <th style="text-align: left">Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Source (VCC2SF3)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/natural/SF1-30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Target (VCC2TM1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/natural/TM1-30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Converted Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/vae-sp2sp/SF1-TM1-30001-gau-GV.wav">&lt;/source&gt;</audio></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="sm1-tf1">SM3-TF1</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Type</th>
+      <th style="text-align: left">Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Source (VCC2SM3)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/natural/SM1-30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Target (VCC2TF1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/natural/TF1-30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Converted Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/vae-sp2sp/SM1-TF1-30001-gau-GV.wav">&lt;/source&gt;</audio></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="sm1-tm1">SF3-TM1</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Type</th>
+      <th style="text-align: left">Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Source (VCC2SF3)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/natural/SM1-30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Target (VCC2TM1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/natural/TM1-30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Converted Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/vae-sp2sp/SM1-TM1-30001-gau-GV.wav">&lt;/source&gt;</audio></td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="sm1-tm1">SM3-TM1</h3>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Type</th>
+      <th style="text-align: left">Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Source (VCC2SM3)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/natural/SM1-30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Target (VCC2TM1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/natural/TM1-30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Converted Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src="samples/vae-sp2sp/SM1-TM1-30001-gau-GV.wav">&lt;/source&gt;</audio></td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+
+
+</section>
+  
+  
+
+</body></html>
