@@ -1,323 +1,164 @@
 <!DOCTYPE html>
-<!-- saved from url=(0108)file:///C:/Users/Justin/Desktop/School%20Work/Personal%20Website/Resume%20-%20Start%20Bootstrap%20Theme.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Justin Yang's Homepage</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="./Resume - Start Bootstrap Theme_files/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="./Resume - Start Bootstrap Theme_files/css" rel="stylesheet">
-    <link href="./Resume - Start Bootstrap Theme_files/css(1)" rel="stylesheet">
-    <link href="./Resume - Start Bootstrap Theme_files/all.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="./Resume - Start Bootstrap Theme_files/resume.min.css" rel="stylesheet">
-
+<title>psppg_page</title>
   </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><font color="#A31F34">Exemplar-based Voice Conversion using Locally Linear Embedding with pre-softmaxed Phonetic Posteriorgram</font></a></h1>
+               
 
-  <body id="page-top">
+        <p>This is a demo page for Exemplar-based Voice Conversion using Locally Linear Embedding with pre-softmaxed Phonetic Posteriorgram. This framework can be used for both parallel and non-parallel corpora.</p>
+        <p>Worth of mentioning, this method can be seen as a many-to-one method, where there is no need for any source/background-source information to perform conversion.</p>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="file:///C:/Users/Justin/Desktop/School%20Work/Personal%20Website/startbootstrap-resume-gh-pages/startbootstrap-resume-gh-pages/index.html#page-top">
-        <span class="d-block d-lg-none">Justin Yang</span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./Resume - Start Bootstrap Theme_files/profile.jpg" alt="">
-        </span>
-      </a>
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="file:///C:/Users/Justin/Desktop/School%20Work/Personal%20Website/startbootstrap-resume-gh-pages/startbootstrap-resume-gh-pages/index.html#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger active" href="file:///C:/Users/Justin/Desktop/School%20Work/Personal%20Website/startbootstrap-resume-gh-pages/startbootstrap-resume-gh-pages/index.html#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="file:///C:/Users/Justin/Desktop/School%20Work/Personal%20Website/startbootstrap-resume-gh-pages/startbootstrap-resume-gh-pages/index.html#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="file:///C:/Users/Justin/Desktop/School%20Work/Personal%20Website/startbootstrap-resume-gh-pages/startbootstrap-resume-gh-pages/index.html#skills">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="file:///C:/Users/Justin/Desktop/School%20Work/Personal%20Website/startbootstrap-resume-gh-pages/startbootstrap-resume-gh-pages/index.html#interests">Interests</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="file:///C:/Users/Justin/Desktop/School%20Work/Personal%20Website/startbootstrap-resume-gh-pages/startbootstrap-resume-gh-pages/index.html#awards">Awards</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      </header>
+      <section>
+<hr>
+<b><font size="5"><font color="#A31F34">Abstract</font></font></>
+<p>Current exemplar-based Voice Conversion (VC) methods require parallel speech data at the online/training stage.  However, in most real-life situations, the source and target speaker usually do not speak the same sentence or even speak different languages.  Hence, developing algorithms for non-parallel cases would be required and more suitable for real-life applications.  This paper describes an exemplar-based many-to-one voice conversion method via Locally Linear Embedding (LLE) for non-parallel corpora, utilizing pre-softmaxed Phonetic PosteriorGram (PPG), which is mostly speaker independent but partially speaker dependent, to perform conversion on voice.</p>
+<hr>
+<b><font size="5"><font color="#A31F34">Dataset Used</font></font></>
 
-    <div class="container-fluid p-0">
+<p>We evaluated our proposed framework on the <strong>Voice Conversion Challenge 2018 (VCC 2018) dataset</strong>. <a href="https://arxiv.org/abs/1804.04262">[Paper]</a><a href="https://datashare.is.ed.ac.uk/handle/10283/3061">[Dataset]</a></p>
+ <hr>
 
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
-          <h1 class="mb-0">Justin
-            <span class="text-primary">Yang</span>
-          </h1>
-          <div class="subheading mb-5"><a href="mailto:justinyang1110@gmail.com">justinyang1110@gmail.com</a>
-          </div>
-          <p class="lead mb-5"><strong>Bio</strong>. 
-             <br\> <br>
-            Currently I'm a Research Assistant at both the<strong> <a href="http://www.iis.sinica.edu.tw/index_en.html">Institute of Information Science</a>, Acadamia Sinica</strong> under the supervision of Dr. <a href="http://www.iis.sinica.edu.tw/pages/whm/index_en.html">Hsin-Ming Wang</a> and <strong>National Taiwan University (NTU)</strong> under the supervision of Prof.<a href="http://www.ee.ntu.edu.tw/profile?id=88">Hsuan-Jung Su</a>. My research interest lies in <strong>Signal Processing, Speech Processing and Machine Learning.</strong>
-            <br\><br><br\><br>
-            Previously I just received my Bachelor's degree from <strong>National Chiao Tung University</strong> in June 2018, majoring in <strong>Electrical and Computer Engineering (ECE)</strong>.</p>
+<font size="5"><font color="#A31F34">Method</font></font>
 
-              <b><font color="#A31F34">News:</font></b> <br>
-            - <strong>2018.09</strong>, I'm joining Communications, Signal and Information Processing (CSIP) Lab at National Taiwan University (NTU) for the next academic year !<br>
-            - <strong>2018.06</strong>, I received my B.S. in Electrical and Computer Engineering from National Chiao Tung University !<br>
-            - <strong>2018.02</strong>, I ranked No.1 in Department of ECE and was a recipient of 2017 Fall's Presindential Award !<br>
-            - <strong>2017.12</strong>, I was a recipient of the Datatronics Technology Scholarship which is honored to the top junior and senior student in College of ECE !<br>
-            - <strong>2017.12</strong>, We participated in the Second Voice Conversion Challenge (VCC2018) as Team AST (Acadamia Sinica Taiwan) !<br>
-            - <strong>2017.9</strong>, I'm accepted as a Research Assistant by Prof. Hsin-Ming Wang for the next academic year !<br>
+<p>We proposed a Exemplar-based Voice Conversion framework utilizing manifold learning algorithm Locally Linear Embedding to perform conversion. Specifically, we applied Automatic Speech Recognition (ASR) techniques (pre-softmaxed Phonetic Posteriorgram (psPPG) obtained by ASR) to further improve our perfromance on non-parallel cases. To be more specific, we utilize psPPG as an intermidiate feature to perform conversion on mel cepstrum coefficients derived from STRAIGHT-vocoded spectrum and synthesizes waveform with the STRAIGHT Vocoder.</p>
+<p>Worth of mentioning, there's no need for alignment (DTW) at the offline stage, since only target information is needed.</p>
+<p>A flowchart is provided below.</p>
+<p><img src="./image/psppg_graph.PNG" alt="Naturalness"></p>
 
-<!--          <div class="social-icons">
-            <a href="file:///C:/Users/Justin/Desktop/School%20Work/Personal%20Website/startbootstrap-resume-gh-pages/startbootstrap-resume-gh-pages/index.html#">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="file:///C:/Users/Justin/Desktop/School%20Work/Personal%20Website/startbootstrap-resume-gh-pages/startbootstrap-resume-gh-pages/index.html#">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="file:///C:/Users/Justin/Desktop/School%20Work/Personal%20Website/startbootstrap-resume-gh-pages/startbootstrap-resume-gh-pages/index.html#">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="file:///C:/Users/Justin/Desktop/School%20Work/Personal%20Website/startbootstrap-resume-gh-pages/startbootstrap-resume-gh-pages/index.html#">
-              <i class="fab fa-facebook-f"></i>
-            </a>
--->
-          </div>
-        </div>
-      </section>
+<h2 id="speech-samples"><font color="#A31F34">Speech Samples</font></h2>
+<p>Here are some speech samples. The Baseline Systems are the systems submitted to the second Voice Conversion Challenge (VCC2018), which can be referred <a href="VC2018_page.html">here</a></p>
+<p>F stands for female speakers, M stands for male speakers.</p>
+<h3 id="sf1-tf1">SM1-TM1</h3>
 
-      <hr class="m-0">
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Type</th>
+      <th style="text-align: left">Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Source (VCC2SM1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\SM1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Target (VCC2TM1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\TM1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Baseline Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\SM1_TM1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Our Converted Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_psppg\SM1_to_TM1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+</tbody>
+</table>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-        <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
+<h3 id="sf1-tm1">SF1-TM1</h3>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Research Assistant</h3>
-              <div class="subheading mb-3">Speech, Language and Music Processing (SLAM) Laboratory at institute of information science,academia sinica</div>
-              <p>- To perform Voice Conversion (VC) with non-parallel corpora, we utilized pre-softmaxed Phonetic PosteriorGrams (PPGs), which is obtained from Automatic Speech Recognition (ASR) and serves as a speaker-independent feature. This stands for an intermediate feature to perform conversion, and Locally Linear Embedding (LLE) as the method to contruct conversion utterances. This method reaches comparable performance with parallel VC methods and outperform other non-parallel methods. (<font color="#A31F34"><a href="http://www.iis.sinica.edu.tw/index_en.html">demo page</font></a>)</p>
-              <p>- To eliminate the vocoder effects, which is one of the main causes of quality degradation, we proposed a vocoder-free Voice Conversion system with a combination of the previous exemplar-based Voice Conversion system and the Differential framework, which utilizes spectral difference to synthesize waveform, to construct Voice conversion.        </p>
-              <p>- To enhanced the Differential framework, which utilizes spectral difference to synthesize waveform for Voice conversion, by applying Dynamic Time Wrapping (DTW) when calculating spectrum difference. This eliminates the discontinuity effect on the synthesized waveform. (<font color="#A31F34"><a href="http://www.iis.sinica.edu.tw/index_en.html">demo page</font></a>)</p>
-              <p>- Participated in the <strong> 2nd Voice Conversion Challenge (VCC2018)</strong> , both HUB and SPOKE task. (<font color="#A31F34"><a href="http://www.iis.sinica.edu.tw/index_en.html">demo page</font></a>)</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2017 - Present</span>
-            </div>
-          </div>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Type</th>
+      <th style="text-align: left">Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Source (VCC2SF1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\SF1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Target (VCC2TM1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\TM1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Baseline Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\SF1_TM1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Our Converted Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_psppg\SF1_to_TM1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Research Intern</h3>
-              <div class="subheading mb-3">Speech, Language and Music Processing (SLAM) Laboratory at institute of information science,academia sinica</div>
-              <p>- Proposed a Perceptual Generative Advarsarial Network with conditional input for image deblurring, which I utilized a pretrained VGG-19 network to take away the artifact effects on images in order to improve the performance of image deblurring.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2017 - August 2017</span>
-            </div>
-          </div>
+  </tbody>
+</table>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Undergraduate Research Student</h3>
-              <div class="subheading mb-3">Mobile Intelligent Network Technology (MINT) Lab at Graduate Institute of Communications Engineering,NCTU</div>
-              <p>- Developed the efficient millimeter wave beams power allocation, and users grouping system.</p>
-               <p>- Reaches 300% higher datarate per user compared to undirectional traditional beamforming methods.</p>
-           </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">February 2017 - June 2017</span>
-            </div>
-          </div>
+<h3 id="sm1-tf1">SM1-TF1</h3>
 
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Undergraduate Research Student</h3>
-              <div class="subheading mb-3">Human and Machine Lab at Graduate Institute of Electrical and Control Engineering,NCTU</div>
-              <p>- Designed and build an intelligent mobility aid named I-Go, which utilizes six-axis force sensor to sense the force on the handle, camera to recognize feet image from the user to trace the user's position and state, and LiDAR laser scanner to scan the environment in front of I-Go to perform obstacle avoidance, eventually decide the next behavior to be constructed by paired motors.</p>
-              <p>- Developed a cross-platform server for sensors to communicate with each other.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2016 - January 2017</span>
-            </div>
-          </div>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Type</th>
+      <th style="text-align: left">Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Source (VCC2SM1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\SM1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Target (VCC2TF1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\TF1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Baseline Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\SM1_TF1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Our Converted Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_psppg\SM1_to_TF1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
 
-        </div>
+  </tbody>
+</table>
 
-      </section>
+<h3 id="sm1-tm1">SF1-TF1</h3>
 
-      <hr class="m-0">
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Type</th>
+      <th style="text-align: left">Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Source (VCC2SF1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\SF1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Target (VCC2TF1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\TF1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Baseline Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\SF1_TF1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Our Converted Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_psppg\SF1_to_TF1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
+  </tbody>
+</table>
+<hr>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">National Chiao Tung University</h3>
-              <div class="subheading mb-3">Bachelor of Science in Electrical and Computer Engineering (ECE)</div>
-              <div></div>
-              <p>
-                Overall GPA: 3.98 / 4.3
-                <br>
-                Major GPA : 4.06 / 4.3
-                <br> 
-                Last 60 GPA: 4.18 / 4.3
-                <br>
-                Last Year GPA : 4.3 / 4.3
-              </p>
-          <div class="subheading mb-3">Related Graduate-Level Courses  (All A+)</div>
-          <ul class="list-style-type:disc">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              <strong>Machine Learning</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (95/100)</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              <strong>Detection and Estimation Theory</strong> &nbsp; (96/100)</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              <strong>Pattern Recognition</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (99/100)</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              <strong>Deep Learning</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (98/100)</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              <strong>Digital Signal Processing</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (97/100)</li>
-          </ul>
-        </div>
-
-        <p></p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2014 - June 2018</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0"></h3>
-              <div class="subheading mb-3"></div>
-              <p></p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary"></span>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-          <h2 class="mb-5">Projects</h2>
-
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-style-type:disc">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Programming Languages and Libraries</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Functional Teams</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum</li>
-          </ul>
-
-          <div class="subheading mb-3">Workflow</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Mobile-First, Responsive Design</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Functional Teams</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum</li>
-          </ul>
-        </div>
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="Projects">
-        <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
-          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
-        </div>
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-          <h2 class="mb-5">Awards &amp; Certifications</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Google Analytics Certified Developer</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Mobile Web Specialist - Google Certification</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              2<sup>nd</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - James Buchanan High School - Hackathon 2006</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              3<sup>rd</sup>
-              Place - James Buchanan High School - Hackathon 2005</li>
-          </ul>
-        </div>
-      </section>
-
-    </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="./Resume - Start Bootstrap Theme_files/jquery.min.js.下載"></script>
-    <script src="./Resume - Start Bootstrap Theme_files/bootstrap.bundle.min.js.下載"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="./Resume - Start Bootstrap Theme_files/jquery.easing.min.js.下載"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="./Resume - Start Bootstrap Theme_files/resume.min.js.下載"></script>
-
+</section>
   
-
+  
 
 </body></html>
