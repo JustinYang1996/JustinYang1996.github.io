@@ -13,13 +13,13 @@
         <h1><font color="#A31F34">Alleviating Discontinuity Effects on Direct Waveform Modification for Voice Conversion Synthesis</font></a></h1>
                
 
-        <p>This is a demo page for Alleviating Discontinuity Effects on Direct Waveform Modification for Voice Conversion Synthesis</p>
+        <p>This is a demo page for Alleviating Discontinuity Effects on Direct Waveform Modification for Voice Conversion Synthesis. (Ongoing Work)</p>
       </header>
       <section>
 <hr>
 <b><font size="5"><font color="#A31F34">Abstract</font></font></>
-<p>Conventional Differential-based Vocoder-Free Voice Conversion methods utilize direct waveform modification based on spectrum differentials; however, when the f0-transformation ratio is relatively large, synthesized waveform results in collapse waveform that lowers the sunthesis quality.</p>
-<p>Here is a general flow chart for the Vocoder-free Voice Conversion method based on direct waveform modification.</p>
+<p>Conventional Vocoder-Free Voice Conversion methods with direct waveform modification based on spectrum differentials is known to synthesize more natural speech than vocoder-based methods; however, when the f0-transformation ratio is relatively large, synthesized waveform results in some collapse waveform between spoken words that lowers the synthesis quality.</p>
+<p>Here is a conventional flow chart for the Vocoder-free Voice Conversion method based on direct waveform modification.</p>
 <p><img src="./image/DIFF_graph_wo_DTW.PNG" alt="Naturalness"></p>
 <hr>
 <b><font size="5"><font color="#A31F34">Dataset Used</font></font></>
@@ -31,13 +31,11 @@
 <p>We tested our method on the pair <strong>SM1 to TF1</strong>, where the f0-transformation ratio is relatively large (1.99). </p>
 <p>F0 transformation is done with duration conversion with Waveform Similarity and Overlap Add (WSOLA) and resampling.</p>
 
-<p>A flowchart is provided below.</p>
-
-<h2 id="speech-samples"><font color="#A31F34">Speech Samples</font></h2>
-<p>Here are some speech samples. The Baseline Systems are the systems submitted to the second Voice Conversion Challenge (VCC2018), which can be referred <a href="VC2018_page.html">here</a></p>
+<p>A flowchart of our proposed method is provided below.</p>
+<p><img src="./image/DIFF_graph_with_DTW.PNG" alt="Naturalness"></p>
+<hr>
+<h2 id="speech-samples"><font color="#A31F34">Speech Samples with Spectrogram</font></h2>
 <p>F stands for female speakers, M stands for male speakers.</p>
-
-<h3 id="sm1-tf1">SM1-TF1</h3>
 
 <table>
   <thead>
@@ -56,17 +54,20 @@
       <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\TF1_30001.wav">&lt;/source&gt;</audio></td>
     </tr>
     <tr>
-      <td style="text-align: left">Baseline Speech</td>
-      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\SM1_TF1_30001.wav">&lt;/source&gt;</audio></td>
+      <td style="text-align: left">Conventional Method Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\dtw_speechfile\without_dtw_30001.wav">&lt;/source&gt;</audio></td>
     </tr>
     <tr>
-      <td style="text-align: left">Our Converted Speech</td>
-      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_psppg\SM1_to_TF1_30001.wav">&lt;/source&gt;</audio></td>
+      <td style="text-align: left">Our Proposed Method Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\dtw_speechfile\with_dtw_30001.wav">&lt;/source&gt;</audio></td>
     </tr>
 
   </tbody>
 </table>
-<hr>
+
+<h2 id="speech-samples"><font color="#A31F34">Spectrogram Comparison</font></h2>
+<p><img src="./image/compare.PNG" alt="Naturalness"></p>
+<p>As we can see from the above image, Speech synthesized by the conventional Vocoder-Free Voice Conversion methods with direct waveform modification based on spectrum differentials results in some pulses in the spectroram, and our propsed method alleviates the effect.</p>
 
 </section>
   
