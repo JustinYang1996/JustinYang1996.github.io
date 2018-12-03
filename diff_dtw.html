@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>DIFF_dtw_page</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><font color="#A31F34">Alleviating Discontinuity Effects on Direct Waveform Modification for Voice Conversion Synthesis</font></a></h1>
+               
+
+        <p>This is a demo page for Alleviating Discontinuity Effects on Direct Waveform Modification for Voice Conversion Synthesis</p>
+      </header>
+      <section>
+<hr>
+<b><font size="5"><font color="#A31F34">Abstract</font></font></>
+<p>Current exemplar-based Voice Conversion (VC) methods require parallel speech data at the online/training stage.  However, in most real-life situations, the source and target speaker usually do not speak the same sentence or even speak different languages.  Hence, developing algorithms for non-parallel cases would be required and more suitable for real-life applications.  This paper describes an exemplar-based many-to-one voice conversion method via Locally Linear Embedding (LLE) for non-parallel corpora, utilizing pre-softmaxed Phonetic PosteriorGram (PPG), which is mostly speaker independent but partially speaker dependent, to perform conversion on voice.</p>
+<hr>
+<b><font size="5"><font color="#A31F34">Dataset Used</font></font></>
+
+<p>We evaluated our proposed framework on the <strong>Voice Conversion Challenge 2018 (VCC 2018) dataset</strong>. <a href="https://arxiv.org/abs/1804.04262">[Paper]</a><a href="https://datashare.is.ed.ac.uk/handle/10283/3061">[Dataset]</a></p>
+ <hr>
+
+<font size="5"><font color="#A31F34">Method</font></font>
+
+<p>We proposed a Exemplar-based Voice Conversion framework utilizing manifold learning algorithm Locally Linear Embedding to perform conversion. Specifically, we applied Automatic Speech Recognition (ASR) techniques (pre-softmaxed Phonetic Posteriorgram (psPPG) obtained by ASR) to further improve our perfromance on non-parallel cases. To be more specific, we utilize psPPG as an intermidiate feature to perform conversion on mel cepstrum coefficients derived from STRAIGHT-vocoded spectrum and synthesizes waveform with the STRAIGHT Vocoder.</p>
+<p>Worth of mentioning, there's no need for alignment (DTW) at the offline stage, since only target information is needed.</p>
+<p>A flowchart is provided below.</p>
+<p><img src="./image/psppg_graph.PNG" alt="Naturalness"></p>
+
+<h2 id="speech-samples"><font color="#A31F34">Speech Samples</font></h2>
+<p>Here are some speech samples. The Baseline Systems are the systems submitted to the second Voice Conversion Challenge (VCC2018), which can be referred <a href="VC2018_page.html">here</a></p>
+<p>F stands for female speakers, M stands for male speakers.</p>
+<h3 id="sf1-tf1">SM1-TM1</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Type</th>
+      <th style="text-align: left">Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Source (VCC2SM1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\SM1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Target (VCC2TM1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\TM1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Baseline Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\SM1_TM1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Our Converted Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_psppg\SM1_to_TM1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+</tbody>
+</table>
+
+<h3 id="sf1-tm1">SF1-TM1</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Type</th>
+      <th style="text-align: left">Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Source (VCC2SF1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\SF1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Target (VCC2TM1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\TM1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Baseline Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\SF1_TM1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Our Converted Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_psppg\SF1_to_TM1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+
+  </tbody>
+</table>
+
+<h3 id="sm1-tf1">SM1-TF1</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Type</th>
+      <th style="text-align: left">Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Source (VCC2SM1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\SM1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Target (VCC2TF1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\TF1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Baseline Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\SM1_TF1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Our Converted Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_psppg\SM1_to_TF1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+
+  </tbody>
+</table>
+
+<h3 id="sm1-tm1">SF1-TF1</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Type</th>
+      <th style="text-align: left">Sample</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Source (VCC2SF1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\SF1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Target (VCC2TF1)</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\TF1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Baseline Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_VCC2018\SF1_TF1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Our Converted Speech</td>
+      <td style="text-align: left"><audio controls="controls"><source type="audio/wav" src=".\files\speech_sample_psppg\SF1_to_TF1_30001.wav">&lt;/source&gt;</audio></td>
+    </tr>
+
+  </tbody>
+</table>
+<hr>
+
+</section>
+  
+  
+
+</body></html>
